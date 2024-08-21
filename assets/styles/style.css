@@ -7,7 +7,7 @@
     --green-light: rgb(196, 248, 42);
 }
 
-/* General Styles */
+/* General*/
 
 * {
     margin: 0;
@@ -24,25 +24,21 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-/* Main Styles */
+/* Custom */
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main*/
 
 /* Desktop */
 
 .main-content {
     background-color: var(--gray-dark);
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.profile-box,
-.profile-content,
-.profile-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .profile-box {
@@ -53,16 +49,15 @@ body {
     height: 100%;
     padding: 4rem;
     border-radius: 1.2rem;
-    justify-content: space-between;
 }
 
-.profile-box,
 .profile-content {
-    gap: 2.4rem;
+    margin-bottom: 2.4rem;
 }
 
 .profile-avatar {
     display: block;
+    margin: 0 auto 2.4rem;
     border-radius: 50%;
     max-width: 8.8rem;
     width: 100%;
@@ -71,23 +66,25 @@ body {
 .profile-name {
     font-size: 2.4rem;
     line-height: 1.5;
+    font-weight: bold;
     color: white;
     text-align: center;
     margin-bottom: 0.4rem;
 }
 
 .profile-location {
+    height: 2.1rem;
     color: var(--green-light);
-    text-align: center;
     margin-bottom: 2.4rem;
 }
 
 .profile-bio {
+    height: 2.1rem;
     color: white;
-    text-align: center;
 }
 
 .profile-links {
+    flex-direction: column;
     gap: 1.6rem;
     max-width: 30.4rem;
     width: 100%;
