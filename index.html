@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,8 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400,600,700&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/styles/style.css">
 
@@ -17,7 +18,31 @@
   <title>Frontend Mentor | Social links profile</title>
 
 </head>
+
 <body>
-  
+  <main class="main-content">
+    <!-- Social links profile -->
+    <section class="profile-box" role="contentinfo">
+      <!-- Photo, name and/or description -->
+      <figure class="profile-content">
+        <img class="profile-avatar" src="/assets/images/avatar-jessica.jpeg"
+          alt="A person with a natural afro hairstyle wearing a black jacket looks at the camera against a plain background.">
+        <figcaption>
+          <h1 class="profile-name">Jessica Randall</h1>
+          <h2 class="profile-location">London, United Kingdom</h2>
+          <p class="profile-bio">"Front-end developer and avid reader."</p>
+        </figcaption>
+      </figure>
+      <!-- Social Media Links -->
+      <div class="profile-links">
+        <a href="#" aria-label="GitHub Profile" class="profile-link">GitHub</a>
+        <a href="#" aria-label="Frontend Mentor Profile" class="profile-link">Frontend Mentor</a>
+        <a href="#" aria-label="LinkedIn Profile" class="profile-link">LinkedIn</a>
+        <a href="#" aria-label="Twitter Profile" class="profile-link">Twitter</a>
+        <a href="#" aria-label="Instagram Profile" class="profile-link">Instagram</a>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
