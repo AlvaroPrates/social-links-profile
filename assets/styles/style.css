@@ -38,7 +38,7 @@ body {
 
 .main-content {
     background-color: var(--gray-dark);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .profile-box {
